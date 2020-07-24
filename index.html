@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L10HandsOn My First Website</title>
+
+    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.0/lux/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-smnSwzHqW1zKbeuSMsAM/fMQpkk7HY11LuHiwT8snL/W2QBoZtVCT4H5x1CEcJCs" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="text-center">
+            <div>
+                <h1 class="bg-primary text-white"> Anthony Cullors <br> Full Stack Developer </h1>
+            </div>
+        </div>
+    </div><br><br><br>
+    <form>
+        <div class="container">
+            <!-- img -->
+            <div class="img">
+                <div class=" col-4 d-flex justify-content-center">
+                    <img src="imgsL10/Anthony-Fitness-064.jpg" class="img-fluid" alt="Responsive image">
+                </div>
+            </div><br><br><br>
+
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 d-flex justify-content-center" id="animation">
+            
+                <h3 id="clickl"><i class="fa fa-linkedin"></i> LinkedIn</h3>
+                <h3 id="clickg"><i class="fa fa-github"></i> GitHub</h3>
+                <h3 id="clicki"><i class="fa fa-instagram"></i> Instagram</h3>
+                <h3 id="clickf"><i class="fa fa-facebook-official"> Facebook</i></h3>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+    </form>
+    <h3 class="text-start bg-primary text-white"> List of My Tech Skills</h3>
+    <form class="row-group">
+        <div class="row-group">
+            <div class="col-4 d-flex justify-content-center">
+                <ul>
+                    <li> Full Stack Web</li>
+                    <li> ruby</li>
+                    <li>Python</li>
+                    <li>C#</li>
+                    <li>Weight training</li>
+                </ul>
+            </div>
+        </div> <br>
+        <div class="row-group">
+            <div class="col-4 d-flex justify-content-center" id="repos">
+                <ul>
+                    <li class="clickGL" onclick="getRequest()">Login</li>
+                    <li id="node">node_id</li>
+                    <li id="repo"> More GitHub Repositories etc. using AJAX Request</li>
+                </ul>
+            </div>
+        </div>
+    </form>
+    <br>
+   
+
+    
+
+    <!-- Footer -->
+    <footer class="footer font-small blue pt-4">
+
+        <!-- Footer Links -->
+        <div class="container text-center text-md-left">
+
+            <!-- Grid row -->
+            <div class="row">
+
+                <!-- Grid column -->
+                <div class="col-lg-6 mt-md-0 mt-3">
+
+                    <!-- Content -->
+                    <h5 class="text-uppercase">4 Corners Fitness Training</h5>
+                    <p>Here to help you grow into your blessings!</p>
+
+                </div>
+                <!-- Grid column -->
+
+                <hr class="clearfix w-100 d-lg-none pb-3">
+
+                <!-- Grid column -->
+                <div class="col-lg-3 mb-sm-0 mb-3">
+
+                    <!-- Links -->
+                    <h5 class="text-uppercase">Contact</h5>
+                
+                    <ul class="list-unstyled">
+                        <li>
+                            <href href="#!">
+                                <h4 class="col-4 d-flex"><i class="fa fa-envelope" aria-hidden="true">anthonycullors@yahoo.com</i></h4> 
+                            </href>
+                        </li>
+                    </ul>
+                    
+                </div
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-lg-3 mb-md-0 mb-3">
+
+
+                </div>
+
+            </div>
+        </div>
+        <!-- Footer Links -->
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2020 Copyright:
+            <a href="https://4cornersfitness.com/" target="-blank"> 4cornersfitness.com</a>
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+
+
+
+    <!--Clickable GitHub Icon linking to your Git hub-->
+    <!--clickable linked in icon linking to your liked in -->
+    <!--Clickable icon links to other Social Media Sites-->
+    <!--Using jQuery, when your icon are hovered over they should transform in size using css animation.-->
+    <!--List your tech - related skills-->
+    <!--Dynamically list your GitHub Repositories using an Ajax request-->
+    <!--https: //api.github.com/users/YOURUSERNAME/repos-->
+    <!--Include a footer that sticks to thebotton of the screen, commonly referred to as a stick footer.-->
+    <!--The footeer should contain contact information with the email icon and an email address listed next to it .-->
+
+</body>
+
+</html>
